@@ -1,0 +1,262 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{
+   font-family: Calibri, Helvetica, sans-serif;  
+  background-color: lightpink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightgreen ;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> BISHOP COTTON WOMENS CHRISTIAN COLLEGE</h1> </center>  
+  <hr>  
+  <label><b> Firstname</b> </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+   
+<label><b> Lastname:</b> </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>
+<tr>
+<td><b>Date of birth</b></td>
+ 
+<td>
+<select name="Birthday_day" id="Birthday_Day">
+<option value="-1">Day:</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+ 
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+ 
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+ 
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+ 
+<option value="31">31</option>
+</select>
+ 
+<select id="Birthday_Month" name="Birthday_Month">
+<option value="-1">Month:</option>
+<option value="January">Jan</option>
+<option value="February">Feb</option>
+<option value="March">Mar</option>
+<option value="April">Apr</option>
+<option value="May">May</option>
+<option value="June">Jun</option>
+<option value="July">Jul</option>
+<option value="August">Aug</option>
+<option value="September">Sep</option>
+<option value="October">Oct</option>
+<option value="November">Nov</option>
+<option value="December">Dec</option>
+</select>
+ 
+<select name="Birthday_Year" id="Birthday_Year">
+ 
+<option value="-1">Year:</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+</select>
+</td>
+</tr>
+  
+<label> 
+<br>
+<br>  
+<b>Course :</b>  
+</label>   
+  
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+</div>
+  
+<div>  
+<label>   
+<b>Gender :</b>  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+<br>
+<br>
+</div>
+
+<tr>
+<td><b>Qualification :</b> <br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board" maxlength="50" /></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="50" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="50" /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board" maxlength="50" /></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="50" /></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="50" /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="50" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="50" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="50" /></td>
+</tr>
+ 
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="Masters_Board" maxlength="50" /></td>
+<td><input type="text" name="Masters_Percentage" maxlength="50" /></td>
+<td><input type="text" name="Masters_YrOfPassing" maxlength="50" /></td>
+</tr>
+</table>
+ 
+</td>
+</tr>
+  
+<label>   
+<b>Phone :</b>  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<b>Current Address :</b>  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>
+
+
+<tr>
+<td><b>CITY</b></td>
+<td><input type="text" name="City" maxlength="30" />
+</td>
+</tr>
+ 
+
+<tr>
+<td><b>PIN CODE</b></td>
+<td><input type="text" name="Pin_Code" maxlength="6" />
+</td>
+</tr>
+ 
+
+<tr>
+<td><b>STATE</b></td>
+<td><input type="text" name="State" maxlength="30" />
+</td>
+</tr>
+ 
+
+<tr>
+<td><b>COUNTRY</b></td>
+<td><input type="text" name="Country" value="India" readonly="readonly" /></td>
+</tr>
+
+
+  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>   
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html> 
